@@ -6,10 +6,10 @@ import topo from '../../../../assets/topo.jpg';
 
 const width = Dimensions.get('screen').width;
 
-export default function Topo(){
+export default function Topo({titulo}){
     return <>
         <Image source={topo} style={estilos.topo} />
-        <Texto style={estilos.titulo}>FAUSTÃONISMO</Texto>
+        <Texto style={estilos.titulo}>{titulo}</Texto>
     </>
 }
 

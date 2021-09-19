@@ -2,18 +2,18 @@ import React from "react";
 import {View, Image, StyleSheet} from 'react-native';
 
 import Texto from '../../../Componentes/Texto';
-import icone from '../../../../assets/icone.png';
 
 
-export default function Deatalhes (){
+
+export default function Deatalhes ({nome, iconeLado, lado, descricao, rank}){
     return <> 
-        <Texto style={estilos.nome}>Faustão</Texto>
+        <Texto style={estilos.nome}>{nome}</Texto>
         <View style={estilos.ladao}>
-            <Image source={icone} style={estilos.icone}/>
-            <Texto style={estilos.lado}>Cleiton Side</Texto>
+            <Image source={iconeLado} style={estilos.icone}/>
+            <Texto style={estilos.lado}>{lado}</Texto>
         </View>
-        <Texto style={estilos.descricao}>O deus da religião Faustonista, criador da Cleiton Power Magic, defende todos de Silvio Santos e sua laia</Texto>
-        <Texto style={estilos.rank}>RANK: 22</Texto>
+        <Texto style={estilos.descricao}>{descricao}</Texto>
+        <Texto style={estilos.rank}>{rank}</Texto>
     </>
 }
 
