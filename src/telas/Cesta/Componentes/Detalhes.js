@@ -2,6 +2,7 @@ import React from "react";
 import {View, Image, StyleSheet, TouchableOpacity} from 'react-native';
 
 import Texto from '../../../Componentes/Texto';
+import BTN from "../../../Componentes/BTN";
 
 
 
@@ -14,10 +15,8 @@ export default function Deatalhes ({nome, iconeLado, lado, descricao, rank, bota
         </View>
         <Texto style={estilos.descricao}>{descricao}</Texto>
         <Texto style={estilos.rank}>{rank}</Texto>
-
-        <TouchableOpacity style={estilos.botao}>
-            <Texto style={estilos.textebotao}>{botao}</Texto>
-        </TouchableOpacity>
+        <BTN>{botao}</BTN>
+        
     </>
 }
 
@@ -60,21 +59,8 @@ const estilos = StyleSheet.create({
     icone :{
         width: 60,
         height: 60,
-        borderRadius: 50
-        
+        borderRadius: 50,
     },
-    botao: {
-        backgroundColor: "#00ff88",
-        paddingVertical: 16,
-        paddingHorizontal: 5,
-        borderRadius: 25,
-    },
-    textebotao: {
-        textAlign: "center",
-        color: "#fff",
-        fontSize: 16,
-        lineHeight: 16,
-        fontWeight: "bold",
-    },
+    
 })
 
