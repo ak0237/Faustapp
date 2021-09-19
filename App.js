@@ -10,7 +10,7 @@ export default function App() {
   
   return (
     //As reticencias al lado do mock faz com que os parametros sejam passados individualmente 
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar />
       <Cesta {...mock} />
       
