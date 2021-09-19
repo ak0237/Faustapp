@@ -18,7 +18,7 @@ const cesta = {
         botao: "Seguir",
     },
     itens: {
-        titulo: "Itens da cesta",
+        titulo: "Alimentos",
         lista: [
           {
             nome: "Tomate",
